@@ -1,2 +1,5 @@
 .vscode
 *.gz
+*.warc
+HW1_Dictionary/*
+HW1_Posting/*

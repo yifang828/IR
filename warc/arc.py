@@ -271,8 +271,8 @@ class ARCFile(object):
             warnings.warn("Using '%s' for Archiving time"%now)
             self.file_headers['date'] = now
         if "ip_address" not in self.file_headers:
-            warnings.warn("Using '127.0.0.1' as IP address of machine that's archiving")
-            self.file_headers['ip_address'] = "127.0.0.1"
+            warnings.warn("Using '10.0.2.15' as IP address of machine that's archiving")
+            self.file_headers['ip_address'] = "10.0.2.15"
         if self.version == 1:
             payload = "1 0 %(org)s\nURL IP-address Archive-date Content-type Archive-length"%dict(org = self.file_headers['org'])
         elif self.version == 2:
